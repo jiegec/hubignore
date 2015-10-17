@@ -3,6 +3,7 @@ require 'hubignore/version'
 require 'net/http'
 require 'uri'
 
+# The main class of HubIgnore
 class HubIgnore
   def run(argv)
     unless File.exist?('.gitignore')
