@@ -13,7 +13,7 @@ USE
 ---
 Put this to your .gitignore:
 ```
-## HubIgnore Begin: Ruby
+## HubIgnore Begin: Ruby, C++
 ## HubIgnore End.  
 ```
     $ hubignore
