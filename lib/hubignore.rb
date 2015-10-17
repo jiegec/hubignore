@@ -50,6 +50,7 @@ EOS
   end
 
   def list
+    puts 'These are the ignores in you .gitignore file:'
     puts items.flatten
   end
 

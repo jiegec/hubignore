@@ -14,8 +14,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Download and manage git ignores from github/gitignore.'
   s.license     = 'MIT'
 
-  s.add_dependency 'colored'
-
   s.files        = Dir.glob('{bin,lib,man}/**/*') + %w(LICENSE README.md)
   s.require_path = 'lib'
   s.executables  = Dir.glob('bin/*').map(&File.method(:basename))
