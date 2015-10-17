@@ -1,4 +1,5 @@
 ## HubIgnore Begin: Ruby
+## Ruby Begins:
 *.gem
 *.rbc
 /.config

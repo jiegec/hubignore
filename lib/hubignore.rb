@@ -55,10 +55,11 @@ EOS
 
   def update
     items.each do |item|
-      content = "\#\# HubIgnore Begin: #{item.join(' , ')}\n"
+      content = "\#\# HubIgnore Begin: #{item.join(', ')}\n"
       item.each do |file|
         next if file.empty?
         puts "Downloading #{file}"
+        content += "\#\# #{file} Begins:\n"
         content += Net::HTTP.get(
           URI.parse(
             'https://raw.githubusercontent.com/github/'\

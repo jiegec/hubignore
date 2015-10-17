@@ -1,8 +1,7 @@
-hubignore(1) -- Download and manage git ignores from github/gitignore.
+hubignore
 =================================================================
+Download and manage git ignores from github/gitignore.
 
-SYNOPSIS
---------
 GitHub has a great collection of .gitignores in github/gitignore.
 This tool is to help using these gitignores withing your own .gitignore.
 
@@ -12,4 +11,18 @@ INSTALL
 
 USE
 ---
+Put this to your .gitignore:
+```
+## HubIgnore Begin: Ruby
+## HubIgnore End.  
+```
     $ hubignore
+Then .gitignore will be:
+```
+## HubIgnore Begin: Ruby, C++
+## Ruby Begins:
+#{The content of https://raw.githubusercontent.com/github/gitignore/master/Ruby.gitignore Here}
+## C++ Begins:
+#{The content of https://raw.githubusercontent.com/github/gitignore/master/C++.gitignore Here}
+## HubIgnore End.
+```
