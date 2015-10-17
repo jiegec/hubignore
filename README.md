@@ -3,7 +3,7 @@ hubignore
 Download and manage git ignores from github/gitignore.
 
 GitHub has a great collection of .gitignores in github/gitignore.
-This tool is to help using these gitignores withing your own .gitignore.
+This tool is to help using these gitignores within your own .gitignore.
 
 INSTALL
 -------
