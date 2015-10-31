@@ -54,7 +54,7 @@ EOS
     puts 'These are the ignores in you .gitignore file:'
     puts items.flatten
   end
-
+  
   def update
     items.each do |item|
       content = "\#\# HubIgnore Begin: #{item.join(', ')}\n"
@@ -67,6 +67,9 @@ EOS
             'https://raw.githubusercontent.com/github/'\
             "gitignore/master/#{file}.gitignore"))
         content += "\n"
+      end
+      item.map! do |name|
+        Regexp.escape(name)
       end
       content += '## HubIgnore End.'
       file = IO.read('.gitignore')
